@@ -2,8 +2,13 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: '0 9 * * *' # Runs at 09:00 UTC every day
+    - cron: '0 9 * * *'
   workflow_dispatch: 
+
+# --- ADD THIS SECTION BELOW ---
+permissions:
+  contents: write
+# ------------------------------
 
 jobs:
   build:
